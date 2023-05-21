@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+
+<!-- 	<MessageBus type="RabbitMQ" active="false">
+		<RealTimeQueue>NEXTLEVEL_ES_REALTIME_METADATA_QUEUE_NAME</RealTimeQueue>
+		<RabbitMQ>
+			<Host>localhost</Host>
+			<Port>5672</Port>
+			<VirtualHost>nextlevelApp</VirtualHost>
+			<User>test</User>
+			<Password>test</Password>
+		</RabbitMQ>
+	</MessageBus> -->
+	
+	<MessageBus type="Kafka" active="true">
+		<RealTimeQueue>NEXTLEVEL_ES_REALTIME_METADATA_QUEUE_NAME</RealTimeQueue>
+		<Kafka>
+			<Host>localhost</Host>
+			<Port>9092</Port>
+			<User></User>
+			<Password></Password>
+		</Kafka>
+	</MessageBus>
+

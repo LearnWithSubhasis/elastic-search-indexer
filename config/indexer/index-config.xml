@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndexAll parentIndex="nextlevel-all-index_v1_1">
+	<BatchCount>100</BatchCount>
+	<MultiThreaded>false</MultiThreaded>
+	<DeleteRecordsAfterIndexing>true</DeleteRecordsAfterIndexing>
+	
+	<Index name="student">
+		<DataSource></DataSource>
+		<Query dbType="MySQL"> 
+			<QueryText>
+				<![CDATA[
+				    select student_id, name, age, role_no, sex, religion, nationality, parent_name, date_created, last_updated
+				    from students
+					where 1 = 1
+				]]>
+			</QueryText>
+		</Query>		 	
+		<DocumentType>student</DocumentType>
+		<IDKey>student_id</IDKey>
+		<ModifiedDate>last_updated</ModifiedDate>
+		<CustomMapping/>
+		<SkipIndexCreation>false</SkipIndexCreation>
+	</Index>	
+</IndexAll>

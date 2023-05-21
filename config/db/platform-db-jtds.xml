@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConnectionData>
+	<!-- The secondaryDBURL is for reading data from secondary DB server, will be used for indexing operations -->
+	<secondaryDBURL>jdbc:mysql://localhost:3306/nextlevel_dummy_db</secondaryDBURL>
+	<!-- The url is for updating the data in primary DB server, otherwise data won't sync up -->
+
+	<url>jdbc:mysql://localhost:3306/nextlevel_dummy_db</url>
+	<username>dummy_user</username>
+	<password>dummy_pass</password>
+	<platformDBPasswordEncrypted>false</platformDBPasswordEncrypted>
+	<sliceDBsPasswordEncrypted>false</sliceDBsPasswordEncrypted>
+	<driverClassName>net.sourceforge.jtds.jdbc.Driver</driverClassName>
+	<!-- 
+	<logAbandoned>true</logAbandoned>
+	<maxActive>10</maxActive>
+	<maxIdle>5</maxIdle>
+	<maxWait>10000</maxWait>
+	<removeAbandoned>true</removeAbandoned>
+	<removeAbandonedTimeout>60</removeAbandonedTimeout>
+	<testOnBorrow>false</testOnBorrow>
+	<type>javax.sql.DataSource</type>
+	<validationQuery>SELECT 1</validationQuery>
+	 -->
+</ConnectionData>

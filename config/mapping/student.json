@@ -1,0 +1,58 @@
+{
+	"student": 
+	{
+		"_all": {
+			"enabled": false,
+			"analyzer" : "all_analyzer"
+		},
+
+		"dynamic": "false",
+		"properties": {
+			"tenant": {
+				"type": "keyword"
+			},
+
+			"student_id": {
+				"type": "long"
+			},
+			
+			"name": {
+				"type": "text"
+			},
+			
+			"age": {
+				"type": "text"
+			},
+					
+			"role_no": {
+				"type": "text"
+			},
+			
+			"sex": {
+				"type": "keyword"
+			},
+			
+			"religion": {
+				"type": "text"
+			},
+			
+			"nationality": {
+				"type": "text"
+			},			
+					
+			"parent_name": {
+				"type": "keyword"
+			},
+									
+			"date_created": {
+				"type": "date",
+				"format": "epoch_second"
+			},	
+					
+			"last_updated": {
+				"type": "date",
+				"format": "epoch_second"
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ZooKeeper>
+	<NodeID>4</NodeID>
+	<Host>localhost</Host>
+	<Port>2181</Port>
+	<PathElection>/nextlevel/es/indexer/election</PathElection>
+	<ProcessNodePrefix>/p_</ProcessNodePrefix>
+	<MasterCanWork>false</MasterCanWork>
+</ZooKeeper>

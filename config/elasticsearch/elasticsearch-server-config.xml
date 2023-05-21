@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElasticSearchserverConfig>
+	<ClusterName>nextlevel-es-cluster</ClusterName>
+	<!-- One or more server host names where elasticsearch servers will be deployed -->
+	<ServerHost>
+		<!-- Node type can be index or data -->
+		<NodeType>Index</NodeType>
+		<NodeName>192.168.0.216</NodeName>
+	</ServerHost>
+	<!-- 
+	<ServerHost>
+		<NodeType>Index</NodeType>
+		<NodeName>node2</NodeName>
+	</ServerHost>
+	<ServerHost>
+		<NodeType>Index</NodeType>
+		<NodeName>node3</NodeName>
+	</ServerHost>
+	 -->
+	<TransportClientPort>9300</TransportClientPort>
+	<HttpPort>9200</HttpPort>
+	<!-- client.transport.sniff = true | false -->
+	<ClientTransportSniff>true</ClientTransportSniff>
+	<XPackEnabled>false</XPackEnabled>
+	<ElasticSearchUser>elastic</ElasticSearchUser>
+	<ElasticSearchPassword>changeme</ElasticSearchPassword>
+	<TLSEnabled>false</TLSEnabled>
+	<TLSPathToCertificateAuth>config/elasticsearch/ca.crt</TLSPathToCertificateAuth>
+	<TLSPathToCertificateFile>config/elasticsearch/es-node.crt</TLSPathToCertificateFile>
+	<TLSPathToCertificateKey>config/elasticsearch/es-node.key</TLSPathToCertificateKey>
+</ElasticSearchserverConfig>

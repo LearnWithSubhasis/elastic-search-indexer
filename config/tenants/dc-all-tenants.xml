@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<tenants>
+	<tenantInstance id="tenant1">     
+	    <tenantDatabaseInstance dbHost="localhost" dbId="nextlevel_dummy_db" vendor="mysql" username="dummy_user" password="dummy_pass" schemaName="nextlevel_dummy_db" port="3306" />          
+	    <elasticSearchEnabled>true</elasticSearchEnabled>
+	</tenantInstance>
+</tenants>

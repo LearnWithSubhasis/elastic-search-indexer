@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElasticSearchserverConfig>
+	<ClusterName>##ES_CLUSTER_NAME##</ClusterName>
+	<!-- One or more server host names where elasticsearch servers will be deployed -->
+	<ServerHost>
+		<!-- Node type can be index or data -->
+		<NodeType>Index</NodeType>
+		<NodeName>##ES_NODE_NAME1##</NodeName>
+	</ServerHost>
+	<ServerHost>
+		<!-- Node type can be index or data -->
+		<NodeType>Index</NodeType>
+		<NodeName>##ES_NODE_NAME2##</NodeName>
+	</ServerHost>
+	<ServerHost>
+		<!-- Node type can be index or data -->
+		<NodeType>Data</NodeType>
+		<NodeName>##ES_NODE_NAME3##</NodeName>
+	</ServerHost>
+	<TransportClientPort>##ES_TRANSPORT_CLIENT_PORT##</TransportClientPort>
+	<HttpPort>##ES_HTTP_PORT##</HttpPort>
+	<!-- client.transport.sniff = true | false -->
+	<ClientTransportSniff>true</ClientTransportSniff>
+</ElasticSearchserverConfig>

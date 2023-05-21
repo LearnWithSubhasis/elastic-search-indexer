@@ -1,0 +1,21 @@
+{
+    "from" : {{from}},
+	"size" : {{size}},
+    "query" : {
+    "bool" : {
+      "must": {
+              "query_string" : {
+                "query": "{{search_text}}"
+            }
+      },
+      "filter" : {
+            "bool" : {
+                    "must" : [
+                            { "term" : { "slice" :  "{{slice_id}}" } }
+                    ]
+              }
+          }
+      }
+    }
+}
+

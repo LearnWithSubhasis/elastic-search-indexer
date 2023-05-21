@@ -1,0 +1,42 @@
+{
+	"TenantsMetadata": 
+	{
+		"_all": {
+			"enabled": false,
+			"analyzer" : "all_analyzer"
+		},
+
+		"dynamic": "false",
+		"properties": {
+			"tenant": {
+				"type": "keyword"
+			},
+
+			"appid": {
+				"type": "keyword"
+			},
+			
+			"document_type": {
+				"type": "keyword"
+			},
+			
+			"execution_started_at": {
+				"type": "date",
+				"format": "epoch_second"
+			},	
+					
+			"last_indexed_at": {
+				"type": "date",
+				"format": "epoch_second"
+			},
+			
+			"last_index_type": {
+				"type": "keyword"
+			},
+			
+			"status": {
+				"type": "keyword"
+			}			
+		}
+	}
+}
