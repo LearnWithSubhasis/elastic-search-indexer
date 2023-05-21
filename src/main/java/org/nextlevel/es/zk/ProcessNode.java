@@ -465,9 +465,6 @@ public class ProcessNode implements Runnable {
 			break;
 			
 		case "UPDATE":
-		case "ACCESS_CHANGED_INSTANCE":
-		case "ACCESS_CHANGED_OBS":
-		case "ACCESS_CHANGED_GROUP":
 			indexManager.setIndexOperationMethod(IndexOperationMethod.Update);
 			break;
 	
