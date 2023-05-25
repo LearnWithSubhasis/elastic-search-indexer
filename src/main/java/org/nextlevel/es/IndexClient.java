@@ -36,7 +36,7 @@ public class IndexClient {
 //		IndexManagerFactory imf = IndexManagerFactory.getInstance();
 //		imf.setIndexOperationType(IndexOperationType.Selective);
 //		IndexManager im = imf.getIndexManager();
-//		im.setTenantID("clarity");
+//		im.setTenantID("tenant1");
 ////		im.setSelectedIDsToIndex(null);
 //		im.indexNearRealTime();
 
@@ -50,8 +50,8 @@ public class IndexClient {
 //		IndexManagerFactory imf = IndexManagerFactory.getInstance();
 //		imf.setIndexOperationType(IndexOperationType.Full);
 //		IndexManager im = imf.getIndexManager();
-//		im.setTenantID("clarity");
-//		//im.setIndexDocumentType("conversation");
+//		im.setTenantID("tenant1");
+//		//im.setIndexDocumentType("student");
 //		im.index();
 //
 //		long endedAt = System.currentTimeMillis();
@@ -62,15 +62,15 @@ public class IndexClient {
 //		IndexManagerFactory imf = IndexManagerFactory.getInstance();
 //		imf.setIndexOperationType(IndexOperationType.Full);
 //		IndexManager im = imf.getIndexManager();	
-//		im.setSliceID(1000002);
-//		im.setIndexDocumentType("kbArticle,contact,ticket");
+//		im.setSliceID(1000000);
+//		im.setIndexDocumentType("student,teacher,user");
 //		im.index();
 		
 //		IndexManagerFactory imf = IndexManagerFactory.getInstance();
 //		imf.setIndexOperationType(IndexOperationType.Full);
 //		IndexManager im = imf.getIndexManager();
 //		IndexConfig configData = IndexConfigReader.getInstance().getIndexConfiguration();
-//		im.deleteIndexBySlice(configData.getParentIndexName(), "contact, kbArticle", 999999, true);
+//		im.deleteIndexBySlice(configData.getParentIndexName(), "student, teacher", 1000000, true);
 		
 		parseArgumentsAndIndex(args);
 	}
@@ -211,8 +211,8 @@ public class IndexClient {
 		indexManagerFactory.setIndexOperationType(IndexOperationType.Selective);
 		
 		IndexManager indexManager = indexManagerFactory.getIndexManager();
-		indexManager.setIndexDocumentType("conversation");
-		indexManager.setTenantID("clarity");
+		indexManager.setIndexDocumentType("student");
+		indexManager.setTenantID("tenant1");
 		
 		ArrayList<Long> idsToIndex = new ArrayList<Long>();
 		idsToIndex.add(5013000L);
