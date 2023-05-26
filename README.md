@@ -8,4 +8,6 @@ Horizontally scalable elasticsearch indexer, multi-tenant based.
 
 
 ### YouTube Channel:
-https://youtu.be/B-gU5jDie5o
+Part 1: https://youtu.be/B-gU5jDie5o
+
+Part 2: https://youtu.be/OpsrDhm6k28
