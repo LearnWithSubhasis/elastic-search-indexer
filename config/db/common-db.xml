@@ -39,3 +39,5 @@
 	<type>javax.sql.DataSource</type>
 	<validationQuery>SELECT 1</validationQuery>
 </ConnectionData>
+
+
